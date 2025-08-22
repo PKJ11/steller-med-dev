@@ -4,7 +4,7 @@ const CallToAction = () => {
   return (
     <section className="py-20">
       <div className="container mx-auto px-6">
-        <div className="bg-gradient-cta rounded-2xl p-12 text-center flex flex-row">
+        <div className="bg-gradient-cta rounded-2xl p-12 text-center flex flex-col sm:flex-row">
           <div className="flex-1  text-left">
           <h2 className="text-4xl font-bold text-white mb-4">
             See Innovation in Action.
