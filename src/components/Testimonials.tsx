@@ -44,13 +44,13 @@ const Testimonials = () => {
             CLIENT FEEDBACK
           </div>
           
-          <blockquote className="text-2xl md:text-3xl text-gray-600 leading-relaxed mb-12">
+          <blockquote className="text-lg sm:text-2xl md:text-3xl text-gray-600 leading-relaxed mb-12 px-2 sm:px-0">
             "{current.quote.split('adipiscing elit')[0]}
             <span className="font-semibold text-gray-900">adipiscing elit</span>
             {current.quote.split('adipiscing elit')[1]}"
           </blockquote>
 
-          <div className="flex items-center justify-center space-x-8 mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-8 space-y-4 sm:space-y-0 mb-8">
             <Button
               variant="outline"
               size="icon"

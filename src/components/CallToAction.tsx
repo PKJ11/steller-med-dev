@@ -4,18 +4,20 @@ const CallToAction = () => {
   return (
     <section className="py-20">
       <div className="container mx-auto px-6">
-        <div className="bg-gradient-cta rounded-2xl p-12 text-center">
+        <div className="bg-gradient-cta rounded-2xl p-12 text-center flex flex-row">
+          <div className="flex-1  text-left">
           <h2 className="text-4xl font-bold text-white mb-4">
             See Innovation in Action.
           </h2>
           <h3 className="text-4xl font-bold text-white mb-6">
             Book a Free Demo.
           </h3>
-          <p className="text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-white/90 mb-8 max-w-2xl ">
             Our no-obligation demo takes minutes and unlocks results with innovative solutions & efficient delivery.
           </p>
+          </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-left items-center">
             <Button 
               variant="outline"
               className="bg-success border-success text-white hover:bg-success/90"

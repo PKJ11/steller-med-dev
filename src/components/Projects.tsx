@@ -34,8 +34,8 @@ const Projects = () => {
           <h2 className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-8 text-center">
             OUR SUPPORTERS
           </h2>
-          <div className="flex justify-center items-center space-x-12 opacity-60">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+          <div className="flex justify-center items-center space-x-12 opacity-60 ">
+            {[1, 2, 3].map((i) => (
               <div key={i} className="text-gray-400 font-semibold">
                 logoipsum™
               </div>
@@ -53,7 +53,7 @@ const Projects = () => {
             We are Creating sustainable society, for everyone and forever.
           </h3>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {projects.map((project, index) => (
               <Card key={index} className="overflow-hidden border-0 shadow-medium">
                 <div className="relative h-64">
