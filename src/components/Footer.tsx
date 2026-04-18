@@ -10,10 +10,11 @@ const Footer = () => {
             {/* Company Info */}
             <div>
               <div className="flex items-center space-x-2 mb-6">
-                <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-primary font-bold text-sm">SM</span>
-                </div>
-                <span className="font-bold">STELLAR MED SOFTWARE</span>
+                <img 
+    src="https://ik.imagekit.io/pratik2002/MAIN%20LOGO%20WHITE%20VERSION.png" 
+    alt="Stellar Med Software Logo" 
+    className="h-14 w-auto object-contain"
+  />
               </div>
             </div>
 
