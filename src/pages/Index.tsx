@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import WhyUsCompliance from "@/components/WhyUsCompliance";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <CallToAction />
       <About />
       <Projects />
+      <WhyUsCompliance />
       <Testimonials />
       <Footer />
     </div>

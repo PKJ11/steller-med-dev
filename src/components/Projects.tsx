@@ -1,82 +1,137 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import treeProject from "@/assets/tree-project.jpg";
-import cleanlinessProject from "@/assets/cleanliness-project.jpg";
-import wildlifeProject from "@/assets/wildlife-project.jpg";
+import { Clock, Layers, Zap, ShieldCheck } from "lucide-react";
 
-const Projects = () => {
-  const projects = [
+const VisionMission = () => {
+  const problems = [
     {
-      image: treeProject,
-      title: "Mission 40K: Tree plantation",
-      year: "2021",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum."
+      icon: Clock,
+      title: "Accelerating Time to Market",
+      description:
+        "We understand the importance of accelerating time to market. We specialize in streamlining the entire development process, ensuring that your product moves from concept to commercialization as quickly as possible without compromising quality or compliance.",
     },
     {
-      image: cleanlinessProject,
-      title: "Weekly cleanliness program in city",
-      year: "2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendise varius enim in eros elementum."
+      icon: Layers,
+      title: "Handling Complex Development",
+      description:
+        "TechFlex specializes in handling complex development projects, developing a deep bench of technical expertise, robust project management practices, and state-of-the-art technologies.",
     },
     {
-      image: wildlifeProject,
-      title: "Wildlife safety program",
-      year: "2021",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendise varius enim in eros elementum."
-    }
+      icon: Zap,
+      title: "Accelerate your MedTech",
+      description:
+        "Our comprehensive suite of services—ranging from cutting-edge software and hardware development to in-depth regulatory expertise—ensures that your MedTech innovations are developed efficiently and effectively.",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Ensuring Regulatory Compliance",
+      description:
+        "Our deep expertise in regulatory compliance, combined with our comprehensive development capabilities, enables us to streamline the compliance process, reducing the risk of delays and ensuring that your product is market-ready.",
+    },
+  ];
+
+  const missionPoints = [
+    "To provide integrated hardware and software engineering under one roof.",
+    "To accelerate med-tech development through efficient execution and rapid prototyping.",
+    "To deliver regulatory-ready solutions that meet global quality and safety standards.",
+    "To empower innovators to bring life-saving technologies to patients faster.",
   ];
 
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-6">
-        {/* Supporters Section */}
-        <div className="mb-20">
-          <h2 className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-8 text-center">
-            OUR SUPPORTERS
-          </h2>
-          <div className="flex justify-center items-center space-x-12 opacity-60 ">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="text-gray-400 font-semibold">
-                logoipsum™
+    <section className="bg-white">
+      {/* Vision + Mission */}
+      <div className="relative overflow-hidden bg-[#0a1628] text-white">
+        {/* Circuit-board decorative bg */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none"
+          style={{
+            backgroundImage: `radial-gradient(circle at 20% 50%, #00aeef33 0%, transparent 50%),
+                              radial-gradient(circle at 80% 20%, #00aeef22 0%, transparent 40%)`
+          }}
+        />
+
+        <div className="container mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+          {/* Left: Vision & Mission text */}
+          <div className="space-y-12">
+            {/* Our Vision */}
+            <div>
+              <h2 className="text-3xl font-extrabold text-[#00aeef] mb-4">Our Vision</h2>
+              <p className="text-gray-300 leading-relaxed">
+                To make world-class medical device innovation accessible, fast, and reliable for healthcare
+                innovators worldwide.
+              </p>
+            </div>
+
+            {/* Divider */}
+            <div className="w-full h-px bg-white/10" />
+
+            {/* Our Mission */}
+            <div>
+              <h2 className="text-3xl font-extrabold text-[#00aeef] mb-6">Our Mission</h2>
+              <ul className="space-y-3">
+                {missionPoints.map((point, i) => (
+                  <li key={i} className="flex items-start gap-3 text-gray-300 text-sm leading-relaxed">
+                    <span className="mt-1.5 w-2 h-2 rounded-full bg-[#00aeef] shrink-0" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Right: Two stacked images with overlaid labels */}
+          <div className="relative flex flex-col gap-5">
+            {/* Image 1 */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=700&q=80"
+                alt="Medical device engineering – precision optics"
+                className="w-full h-56 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628]/80 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4 bg-[#00aeef]/90 backdrop-blur-sm rounded-xl px-4 py-2 text-white text-sm font-semibold shadow-lg">
+                Designed for accuracy,<br />safety, and manufacturability.
               </div>
-            ))}
+            </div>
+
+            {/* Image 2 */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=700&q=80"
+                alt="Medical device software – clinical environment"
+                className="w-full h-56 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628]/80 via-transparent to-transparent" />
+              <div className="absolute bottom-4 right-4 bg-[#0a1628]/90 backdrop-blur-sm border border-[#00aeef]/40 rounded-xl px-4 py-2 text-white text-sm font-semibold shadow-lg text-right">
+                Secure, scalable,<br />and built for clinical environments.
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Projects Section */}
-        <div>
-          <div className="w-16 h-0.5 bg-primary mb-4"></div>
-          <h2 className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-4">
-            PROJECTS WE HAVE DONE
-          </h2>
-          <h3 className="text-4xl font-bold text-gray-900 mb-16 max-w-2xl">
-            We are Creating sustainable society, for everyone and forever.
-          </h3>
+      {/* What Problems We Solve */}
+      <div className="bg-gray-50 py-20">
+        <div className="container mx-auto px-6">
+          <div className="mb-12">
+            <div className="w-16 h-0.5 bg-[#00aeef] mb-4" />
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
+              What Problems We <br className="hidden sm:block" />
+              Solve for You
+            </h2>
+          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-            {projects.map((project, index) => (
-              <Card key={index} className="overflow-hidden border-0 shadow-medium">
-                <div className="relative h-64">
-                  <img 
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <h4 className="font-semibold text-lg mb-1">{project.title}</h4>
-                    <p className="text-sm opacity-90">{project.year}</p>
-                  </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {problems.map((problem, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex gap-4 hover:shadow-md transition-shadow"
+              >
+                <div className="w-11 h-11 rounded-xl bg-[#00aeef]/10 flex items-center justify-center shrink-0">
+                  <problem.icon className="w-5 h-5 text-[#00aeef]" />
                 </div>
-                <CardContent className="p-6">
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    {project.description}
-                  </p>
-                  <Button variant="outline" className="text-primary border-primary hover:bg-primary hover:text-white">
-                    See more
-                  </Button>
-                </CardContent>
-              </Card>
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">{problem.title}</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">{problem.description}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -85,4 +140,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default VisionMission;

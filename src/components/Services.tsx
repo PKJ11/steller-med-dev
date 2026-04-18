@@ -1,36 +1,35 @@
-// import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckSquare, Brain, Cloud, Shield } from "lucide-react";
+import { Cpu, Code2, ClipboardCheck, RefreshCcw } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: CheckSquare,
-      title: "Application Engineering Services",
+      icon: Cpu,
+      title: "Hardware Engineering & Development",
       description:
-        "We provide state-of-the-art software engineering services across a variety of technologies and industries.",
+        "Sensor/electronics design, PCB design, mechanical / enclosure design, prototyping, production support.",
       link: "Learn more",
     },
     {
-      icon: Brain,
-      title: "Automation & Artificial Intelligence",
+      icon: Code2,
+      title: "Software Design & Engineering",
       description:
-        "Digital transformation of customer management applications has resulted in the advent of sophisticated, model-based tech.",
+        "Embedded software, device firmware, medical-device applications, cloud platforms, data systems, integration with EHR/EMR or other healthcare IT systems.",
       link: "Learn more",
     },
     {
-      icon: Cloud,
-      title: "Cloud Services",
+      icon: ClipboardCheck,
+      title: "Regulatory-Compliance Support",
       description:
-        "Whether migrating existing systems to the cloud or architecting a new solution, we’ll help you at every step.",
+        "Our deep expertise in regulatory compliance, combined with our comprehensive development capabilities, enables us to streamline the compliance process.",
       link: "Learn more",
     },
     {
-      icon: Shield,
-      title: "Cyber Security",
+      icon: RefreshCcw,
+      title: "Full Lifecycle Support",
       description:
-        "Comprehensive security solutions to safeguard your organization from threats and ensure compliance.",
+        "From initial concept to market-ready device, including rapid prototyping, design reviews, and production support.",
       link: "Learn more",
     },
   ];
@@ -47,12 +46,11 @@ const Services = () => {
                 WHAT WE DO
               </p>
               <h3 className="mt-3 text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
-                Unlocking Growth for <br className="hidden sm:block" />
-                Global Businesses
+                Our Services <br className="hidden sm:block" />
+                Offerings
               </h3>
               <p className="mt-4 text-gray-600 max-w-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique.
+                End-to-end engineering solutions that take medical devices from concept to clinical-ready reality.
               </p>
             </div>
 
@@ -94,7 +92,8 @@ const Services = () => {
             <div className="relative w-full overflow-hidden rounded-xl shadow-lg">
               <img
                 src="https://ik.imagekit.io/pratik2002/steller-med-img2.png?updatedAt=1755839758092"
-                alt="Team collaborating outdoors"/>
+                alt="Medical device engineering team collaborating"
+              />
             </div>
           </div>
         </div>

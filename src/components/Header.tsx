@@ -10,11 +10,12 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">SM</span>
-            </div>
-            <span className="text-lg sm:text-xl font-bold text-primary">STELLAR MED SOFTWARE</span>
-          </div>
+  <img 
+    src="https://ik.imagekit.io/pratik2002/Steller-med-preview.png" 
+    alt="Stellar Med Software Logo" 
+    className="h-12 w-auto object-contain"
+  />
+</div>
 
           <nav className="hidden md:flex items-center space-x-6 sm:space-x-8">
             <a href="#resources" className="text-gray-600 hover:text-primary transition-colors text-sm sm:text-base">
