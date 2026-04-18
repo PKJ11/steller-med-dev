@@ -11,7 +11,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
   <img 
-    src="https://ik.imagekit.io/pratik2002/Steller-med-preview.png" 
+    src="https://ik.imagekit.io/pratik2002/WEBSITE%20LOGO%20COLOR.png" 
     alt="Stellar Med Software Logo" 
     className="h-12 w-auto object-contain"
   />

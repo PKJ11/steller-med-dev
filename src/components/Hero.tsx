@@ -16,11 +16,11 @@ const Hero = () => {
       <div className="relative container mx-auto px-6 py-24 min-h-screen flex items-center">
         <div className="max-w-2xl">
           <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
-            Unlock the Power of AI & Cloud for Healthcare Practice.
+            Your trusted one stop partner for everything medical devices.
           </h1>
           <p className="text-xl text-blue-100 mb-10 max-w-lg">
-            Transform your medical practice with cutting-edge technology solutions designed for modern healthcare providers.
-          </p>
+            We support you at every step - right from design to manufacturing, software and ai to marketing.
+         </p>
           
           <Button 
             className="bg-white text-blue-900 hover:bg-blue-50 font-semibold py-6 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
