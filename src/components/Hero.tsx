@@ -25,7 +25,7 @@ const Hero = () => {
           <Button 
             className="bg-white text-blue-900 hover:bg-blue-50 font-semibold py-6 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
-            What to do 
+            Learn More
           </Button>
         </div>
       </div>
