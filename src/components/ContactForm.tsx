@@ -19,7 +19,7 @@ function useReveal() {
 type FormState = "idle" | "sending" | "success" | "error";
 
 // ── Point this to your Next.js backend ──
-const API_URL = "https://logicology.in/api/sdm-contact";
+const API_URL = "https://sdm-backend-ten.vercel.app/api/sdm-contact";
 
 export default function ContactForm() {
   const { ref, visible } = useReveal();
