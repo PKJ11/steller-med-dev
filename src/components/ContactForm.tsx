@@ -163,7 +163,7 @@ export default function ContactForm() {
                 {[
                   { icon:"✉", label:"Email Us", value:"robertk@stellardesignmfg.com", href:"mailto:robertk@stellardesignmfg.com" },
                   { icon:"✉", label:"Also Reach", value:"kartikgvyas@outlook.com", href:"mailto:kartikgvyas@outlook.com" },
-                  { icon:"🌐", label:"Website", value:"stellardesignmfg.com", href:"https://stellardesignmfg.com" },
+                //   { icon:"🌐", label:"Website", value:"stellardesignmfg.com", href:"https://stellardesignmfg.com" },
                 ].map((item) => (
                   <div key={item.label} className="contact-info-item" style={{ display:"flex", gap:14, alignItems:"flex-start", marginBottom:20 }}>
                     <div className="contact-info-icon" style={{ width:40, height:40, borderRadius:10, background:"rgba(0,174,239,0.12)", border:"1px solid rgba(0,174,239,0.25)", display:"flex", alignItems:"center", justifyContent:"center", fontSize:16, flexShrink:0, transition:"background 0.2s" }}>
