@@ -10,11 +10,11 @@ const Footer = () => {
             {/* Company Info */}
             <div>
               <div className="flex items-center space-x-2 mb-6">
-                <img 
-    src="https://ik.imagekit.io/pratik2002/MAIN%20LOGO%20WHITE%20VERSION.png" 
-    alt="Stellar Med Software Logo" 
-    className="h-14 w-auto object-contain"
-  />
+                <img
+                  src="https://ik.imagekit.io/pratik2002/MAIN%20LOGO%20WHITE%20VERSION.png"
+                  alt="Stellar Med Software Logo"
+                  className="h-14 w-auto object-contain"
+                />
               </div>
             </div>
 
@@ -92,7 +92,6 @@ const Footer = () => {
         </div>
 
         {/* Additional Links */}
-       
       </div>
     </footer>
   );

@@ -7,18 +7,18 @@ import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import WhyUsCompliance from "@/components/WhyUsCompliance";
-
+import ContactForm from "@/components/ContactForm"
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <Hero />
-      <Services />
-      
+      <Services />   
       <About />
       <Projects />
       <WhyUsCompliance />
       <Testimonials />
+      <ContactForm/>
       <Footer />
     </div>
   );
